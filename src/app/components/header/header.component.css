@@ -1,0 +1,7 @@
+.custom-icon-size {
+    --size: 32px;
+    width: var(--size);
+    height: var(--size);
+    font-size: var(--size);
+    /* Đảm bảo font-size cũng được điều chỉnh tương ứng */
+}

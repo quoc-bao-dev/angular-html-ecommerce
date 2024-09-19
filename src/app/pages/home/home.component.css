@@ -1,0 +1,7 @@
+.star-size {
+    --size: 16px;
+    width: var(--size);
+    height: var(--size);
+    font-size: var(--size);
+    color: rgb(255, 208, 0);
+}

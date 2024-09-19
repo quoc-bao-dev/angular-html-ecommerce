@@ -1,0 +1,403 @@
+<div class="bg-background-0 ">
+    <!-- banner -->
+    <section class="py-5 app-container">
+        <div class="grid grid-rows-2 grid-cols-5 gap-4">
+            <div class="col-span-4 row-span-2 rounded-xl overflow-hidden">
+                <img src="https://isotech-demo.myshopify.com/cdn/shop/files/2_f639d039-1b63-405c-ab7d-4561d7871d76.png?v=1696134235"
+                    alt="">
+            </div>
+            <div class="rounded-xl overflow-hidden">
+                <img class="object-cover h-full"
+                    src="https://isotech-demo.myshopify.com/cdn/shop/files/Frame_14.png?v=1695797658&width=1500" alt="">
+            </div>
+            <div class="rounded-xl overflow-hidden">
+                <img class="object-cover h-full"
+                    src="https://isotech-demo.myshopify.com/cdn/shop/files/Frame_15.png?v=1695797682&width=1500" alt="">
+            </div>
+        </div>
+
+        <div class="grid grid-cols-3 gap-4 mt-5">
+
+            <div class="col-span-1 rounded-xl overflow-hidden relative">
+                <img class="object-cover w-full"
+                    src="https://isotech-demo.myshopify.com/cdn/shop/files/3_Banner_4.png?v=1695813715&width=710"
+                    alt="">
+                <div class="absolute top-0 w-full h-full flex items-center">
+                    <div class="pl-5 text-white">
+                        <h2 class="text-xl font-medium">Hero Camera</h2>
+                        <p class="underline text-lg">SHOW NOW</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-span-1 rounded-xl overflow-hidden relative">
+                <img class="object-cover w-full"
+                    src="https://isotech-demo.myshopify.com/cdn/shop/files/3_Banner_5.png?v=1695813736&width=710"
+                    alt="">
+                <div class="absolute top-0 w-full h-full flex items-center">
+                    <div class="pl-5 text-black">
+                        <h2 class="text-xl font-medium">Hero Camera</h2>
+                        <p class="underline text-lg">SHOW NOW</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-1 rounded-xl overflow-hidden relative">
+                <img class="object-cover w-full"
+                    src="https://isotech-demo.myshopify.com/cdn/shop/files/3_Banner_6.png?v=1695813811&width=710"
+                    alt="">
+                <div class="absolute top-0 w-full h-full flex items-center">
+                    <div class="pl-5 text-white">
+                        <h2 class="text-xl font-medium">Hero Camera</h2>
+                        <p class="underline text-lg">SHOW NOW</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner -->
+
+    <!-- trending product -->
+    <section class='pt-7 pb-5 app-container'>
+        <h2 class="heading-1">Trending Product</h2>
+
+        <!-- list cate -->
+        <div class="pt-8 flex gap-10 text-gray-0">
+            <p class="text-xl font-medium border-b pb-1 border-primary-0 text-primary-0 ">Mobile</p>
+            <p class="text-xl font-medium  pb-1">Watch</p>
+            <p class="text-xl font-medium  pb-1">Camera</p>
+            <p class="text-xl font-medium  pb-1">Accessories</p>
+            <p class="text-xl font-medium  pb-1">Speaker</p>
+        </div>
+        <!-- list cate -->
+
+        <div class="pt-6 grid grid-cols-5 gap-5">
+
+            <!-- product card -->
+            <div *ngFor="let item of [1,2,3,4,4,4,4,4,4,4]" class="bg-white rounded-lg overflow-hidden group">
+
+                <!-- image -->
+                <div class="p-3 relative overflow-hidden group/image">
+                    <img class="group-hover/image:scale-110 transition-all"
+                        src="https://isotech-demo.myshopify.com/cdn/shop/files/1200_1200-4_a69c5411-0b06-4e13-9be5-7c3af242ba1f_360x.png?v=1695528909"
+                        alt="">
+                    <div
+                        class="absolute left-0 bottom-0 flex items-center justify-center w-full py-2 bg-primary-0 text-white font-medium text-center text-lg opacity-0 group-hover:opacity-100 translate-y-[100%] group-hover:opacity-1 group-hover:translate-y-0 transition-all  duration-500">
+                        <p class="w-fit center-y gap-1">
+                            <mat-icon>shopping_cart</mat-icon> Quick shop
+                        </p>
+                    </div>
+                    <div class="absolute top-3 right-0 flex flex-col gap-4 pr-3">
+                        <div
+                            class="size-9 rounded bg-white text-gray-500 center-xy shadow-lg hover:bg-gray-100 translate-y-[100%] group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all  duration-500">
+                            <mat-icon>favorite</mat-icon>
+                        </div>
+
+                        <div
+                            class="size-9 rounded bg-white text-gray-500 center-xy shadow-lg hover:bg-gray-100 translate-y-[100%] group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all  duration-500">
+                            <mat-icon>compare_arrows</mat-icon>
+                        </div>
+
+                        <div
+                            class="size-9 rounded bg-white text-gray-500 center-xy shadow-lg hover:bg-gray-100 translate-y-[100%] group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all  duration-500">
+                            <mat-icon>visibility</mat-icon>
+                        </div>
+                    </div>
+                </div>
+                <!-- image -->
+
+                <div class="pt-4 px-3 pb-6">
+                    <h3 class="font-medium">iPad 10t Generation</h3>
+                    <p class="pt-2 font-medium">$230.00</p>
+                    <div class="flex items-center gap-3 pt-2">
+                        <div class="size-[20px] bg-blue-500 rounded-full"></div>
+                        <div class="size-[20px] bg-gray-500 rounded-full"></div>
+                        <div class="size-[20px] bg-green-500 rounded-full"></div>
+                        <div class="">+1</div>
+                    </div>
+                    <div class="pt-3 flex gap-1">
+                        <div class="flex gap-[1px]">
+                            <mat-icon class="star-size">star</mat-icon>
+                            <mat-icon class="star-size">star</mat-icon>
+                            <mat-icon class="star-size">star</mat-icon>
+                            <mat-icon class="star-size">star</mat-icon>
+                            <mat-icon class="star-size">star</mat-icon>
+                        </div>
+                        <p class="text-sm">1 review</p>
+                    </div>
+                </div>
+            </div>
+            <!-- product card -->
+        </div>
+
+    </section>
+    <!-- trending product -->
+
+    <!-- banner -->
+    <section class="py-6 app-container">
+        <div class="grid grid-cols-2 gap-5">
+            <!-- banner -->
+            <div class="relative rounded-lg overflow-hidden group">
+                <img src="https://isotech-demo.myshopify.com/cdn/shop/files/2_Banner_1.png?v=1695814614&width=1420"
+                    class="w-full object-cover  group-hover:scale-110 duration-500" alt="">
+                <div class="absolute top-0 left-0 w-full h-full center-y">
+                    <div class="text-white p-4">
+                        <h2 class="text-3xl font-medium">GoPro Omni Camera</h2>
+                        <p class="text-base pt-2">Pair text with an icon to focus on your store's features</p>
+                        <a href="#">
+                            <p class="underline text-lg pt-2">
+                                Shop Now
+                            </p>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <!-- banner -->
+
+            <!-- banner -->
+            <div class="relative rounded-lg overflow-hidden group">
+                <img src="https://isotech-demo.myshopify.com/cdn/shop/files/2_Banner_2.png?v=1695814633&width=1420"
+                    class="w-full object-cover group-hover:scale-110 duration-500" alt="">
+                <div class="absolute top-0 left-0 w-full h-full center-y">
+                    <div class="text-white p-4">
+                        <h2 class="text-3xl font-medium">GoPro Omni Camera</h2>
+                        <p class="text-base pt-2">Pair text with an icon to focus on your store's features</p>
+                        <a href="#">
+                            <p class="underline text-lg pt-2">
+                                Shop Now
+                            </p>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <!-- banner -->
+        </div>
+    </section>
+    <!-- banner -->
+
+    <!-- best deal product -->
+    <section class="py-6 app-container">
+        <div class="flex justify-between items-center">
+            <h2 class="heading-1">
+                Best Deals Product
+            </h2>
+            <div class="center-y gap-2">
+                <p class="font-thin">
+                    Hurry up! Offer ends in:
+                </p>
+                <div class="center-y gap-1">
+                    <div class="py-2 px-3 rounded bg-primary-0 text-white center-xy">
+                        472
+                    </div>
+                    <div class="py-2 px-3 rounded bg-primary-0 text-white center-xy">
+                        21
+                    </div>
+                    <div class="py-2 px-3 rounded bg-primary-0 text-white center-xy">
+                        48
+                    </div>
+                    <div class="py-2 px-3 rounded bg-primary-0 text-white center-xy">
+                        6
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-[400px,1fr]  gap-5 pt-8">
+            <div class="col-span-1 row-span-2 overflow-hidden rounded-xl">
+                <img src="https://isotech-demo.myshopify.com/cdn/shop/files/Watch_Banner_7b3ae013-75a3-479c-a76f-7c2eea9d4a9e_360x.png?v=1696738786"
+                    alt="" class="w-full h-full object-cover">
+            </div>
+
+            <div class="grid grid-cols-3 gap-5">
+                <div *ngFor="let item of [1,2,3,4,4,4]" class="bg-white rounded-lg overflow-hidden group">
+
+                    <!-- image -->
+                    <div class="p-3 relative overflow-hidden group/image">
+                        <img class="group-hover/image:scale-110 transition-all"
+                            src="https://isotech-demo.myshopify.com/cdn/shop/files/1200_1200-4_a69c5411-0b06-4e13-9be5-7c3af242ba1f_360x.png?v=1695528909"
+                            alt="">
+                        <div
+                            class="absolute left-0 bottom-0 flex items-center justify-center w-full py-2 bg-primary-0 text-white font-medium text-center text-lg opacity-0 group-hover:opacity-100 translate-y-[100%] group-hover:opacity-1 group-hover:translate-y-0 transition-all  duration-500">
+                            <p class="w-fit center-y gap-1">
+                                <mat-icon>shopping_cart</mat-icon> Quick shop
+                            </p>
+                        </div>
+                        <div class="absolute top-3 right-0 flex flex-col gap-4 pr-3">
+                            <div
+                                class="size-9 rounded bg-white text-gray-500 center-xy shadow-lg hover:bg-gray-100 translate-y-[100%] group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all  duration-500">
+                                <mat-icon>favorite</mat-icon>
+                            </div>
+
+                            <div
+                                class="size-9 rounded bg-white text-gray-500 center-xy shadow-lg hover:bg-gray-100 translate-y-[100%] group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all  duration-500">
+                                <mat-icon>compare_arrows</mat-icon>
+                            </div>
+
+                            <div
+                                class="size-9 rounded bg-white text-gray-500 center-xy shadow-lg hover:bg-gray-100 translate-y-[100%] group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all  duration-500">
+                                <mat-icon>visibility</mat-icon>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- image -->
+
+                    <div class="pt-4 px-3 pb-6">
+                        <h3 class="font-medium">iPad 10t Generation</h3>
+                        <p class="pt-2 font-medium">$230.00</p>
+                        <p class="text-green-600"> In stock 72 Items</p>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- best deal product -->
+
+
+    <!-- video  -->
+    <section class="py-6">
+        <video class="w-full aspect-[25/9] object-cover"
+            src="https://isotech-demo.myshopify.com/cdn/shop/videos/c/vp/3d23949c71ad41b6af786af8cd88d52c/3d23949c71ad41b6af786af8cd88d52c.HD-720p-3.0Mbps-19194484.mp4?v=0"
+            autoplay loop></video>
+    </section>
+    <!-- video  -->
+
+    <!-- trending this week -->
+    <section class="py-6 app-container">
+        <h2 class="heading-1 pt-6 text-center">
+            Trending This Week
+        </h2>
+        <div class="grid grid-cols-5 pt-8 gap-5">
+            <div *ngFor="let item of [1,2,3,4,4]" class="bg-white rounded-lg overflow-hidden group">
+
+                <!-- image -->
+                <div class="p-3 relative overflow-hidden group/image">
+                    <img class="group-hover/image:scale-110 transition-all"
+                        src="https://isotech-demo.myshopify.com/cdn/shop/files/1200_1200-4_a69c5411-0b06-4e13-9be5-7c3af242ba1f_360x.png?v=1695528909"
+                        alt="">
+                    <div
+                        class="absolute left-0 bottom-0 flex items-center justify-center w-full py-2 bg-primary-0 text-white font-medium text-center text-lg opacity-0 group-hover:opacity-100 translate-y-[100%] group-hover:opacity-1 group-hover:translate-y-0 transition-all  duration-500">
+                        <p class="w-fit center-y gap-1">
+                            <mat-icon>shopping_cart</mat-icon> Quick shop
+                        </p>
+                    </div>
+                    <div class="absolute top-3 right-0 flex flex-col gap-4 pr-3">
+                        <div
+                            class="size-9 rounded bg-white text-gray-500 center-xy shadow-lg hover:bg-gray-100 translate-y-[100%] group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all  duration-500">
+                            <mat-icon>favorite</mat-icon>
+                        </div>
+
+                        <div
+                            class="size-9 rounded bg-white text-gray-500 center-xy shadow-lg hover:bg-gray-100 translate-y-[100%] group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all  duration-500">
+                            <mat-icon>compare_arrows</mat-icon>
+                        </div>
+
+                        <div
+                            class="size-9 rounded bg-white text-gray-500 center-xy shadow-lg hover:bg-gray-100 translate-y-[100%] group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all  duration-500">
+                            <mat-icon>visibility</mat-icon>
+                        </div>
+                    </div>
+                </div>
+                <!-- image -->
+
+                <div class="pt-4 px-3 pb-6">
+                    <h3 class="font-medium">iPad 10t Generation</h3>
+                    <p class="pt-2 font-medium">$230.00</p>
+                    <p class="text-green-600"> In stock 72 Items</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- trending this week -->
+
+    <!-- recomand for you -->
+    <section class="pt-6 pb-12 app-container">
+        <h2 class="heading-1">
+            Recommended for You
+        </h2>
+        <!-- list cate -->
+        <div class="pt-8 flex gap-10 text-gray-0">
+            <p class="text-xl font-medium  pb-1 border-b border-primary-0 text-primary-0">Accessories</p>
+            <p class="text-xl font-medium  pb-1">Mobile</p>
+            <p class="text-xl font-medium  pb-1">Watch</p>
+            <p class="text-xl font-medium  pb-1">Camera</p>
+            <p class="text-xl font-medium  pb-1">Speaker</p>
+        </div>
+        <div class="pt-6 grid grid-cols-3 gap-5">
+            <div class="p-4 rounded-xl bg-white flex gap-3" *ngFor="let item of [1,1,1,1,1,1]">
+                <img src="https://isotech-demo.myshopify.com/cdn/shop/files/1200_1200-19_682e3513-8d35-42c7-a0ed-c237b7c6ad20_360x.png?v=1696659421"
+                    alt="" class="aspect-square size-[100px]">
+                <div class="flex flex-col justify-between flex-1">
+                    <h3 class="font-medium">Soldout Product</h3>
+
+                    <div class="center-y justify-between w-full">
+                        <p class="font-thin">$140.00</p>
+                        <div class="size-[40px] rounded center-xy border-gray-300 border text-gray-500">
+                            <mat-icon>
+                                shopping_cart
+                            </mat-icon>
+                        </div>
+                    </div>
+
+                    <p class="px-4 py-1 text-red-700 bg-red-100 text-sm rounded-full w-fit">
+                        Out of stock
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- list cate -->
+    </section>
+    <!-- recomand for you -->
+
+    <!-- brand -->
+    <section class="py-12 bg-white">
+        <div class="app-container flex justify-between">
+            <img src="https://isotech-demo.myshopify.com/cdn/shop/files/Group_22035_170x.png?v=1696172343" alt=""
+                class="w-[170px] h-[86px] object-cover">
+            <img src="https://isotech-demo.myshopify.com/cdn/shop/files/Group_22036_170x.png?v=1696172362" alt=""
+                class="w-[170px] h-[86px] object-cover">
+            <img src="https://isotech-demo.myshopify.com/cdn/shop/files/Group_22037_170x.png?v=1696172374" alt=""
+                class="w-[170px] h-[86px] object-cover">
+            <img src="https://isotech-demo.myshopify.com/cdn/shop/files/Group_22039_170x.png?v=1696172432" alt=""
+                class="w-[170px] h-[86px] object-cover">
+            <img src="https://isotech-demo.myshopify.com/cdn/shop/files/Group_22043_170x.png?v=1696172482" alt=""
+                class="w-[170px] h-[86px] object-cover">
+        </div>
+    </section>
+    <!-- brand -->
+
+    <!-- blog -->
+    <section class="pt-12 pb-10 app-container">
+        <h2 class="heading-1 text-center">
+            Lastest Blog
+        </h2>
+
+        <div class="grid grid-cols-3 gap-5 pt-9">
+            <!-- blog card -->
+            <div *ngFor="let item of [1,1,1]" class="rounded-xl overflow-hidden bg-white">
+                <div class="aspect-[480/320]">
+                    <img src="https://isotech-demo.myshopify.com/cdn/shop/articles/16_720x.png?v=1696082676" alt=""
+                        class="w-full object-cover">
+                    <div class="p-5 pb-8">
+                        <div class="center-y gap-3 text-gray-500">
+                            <mat-icon>calendar_month</mat-icon> SEPTEMBER 2024
+                        </div>
+                        <h3 class="heading-blog pt-2">
+                            Electronics industry temporary of employment
+                        </h3>
+
+                        <button class="btn border border-black pl-4 mt-3 ">
+                            Load more <mat-icon class="text-base">arrow_forward</mat-icon>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- blog card -->
+        </div>
+    </section>
+    <!-- blog -->
+</div>

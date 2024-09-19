@@ -1,1 +1,97 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .app-container {
+        @apply px-4 mx-auto md:px-8 lg:px-11 xl:w-[1200px] 2xl:w-[1440px]
+    }
+
+    /* common */
+    .btn {
+        @apply py-2 px-2 rounded-lg flex items-center justify-center duration-300
+    }
+
+    .input-1 {
+        @apply py-3 px-2 border border-gray-300 rounded w-full
+    }
+
+    .input-2 {
+        @apply px-4 py-4 rounded-xl border border-gray-300 bg-background-0 text-gray-500 w-full
+    }
+
+    .checkbox-1 {
+        @apply border border-gray-300 accent-blue-500 w-5 h-5 rounded-lg
+    }
+
+    /* common */
+
+    /* font */
+    .heading-1 {
+        @apply text-[32px] font-medium
+    }
+
+    .heading-blog {
+        @apply text-[24px] font-medium hover:underline
+    }
+
+    .body-1 {
+        @apply font-thin leading-[2] text-gray-700
+    }
+
+    .th-1 {
+        @apply py-3 font-thin
+    }
+
+    /* font */
+
+    /* position */
+    .center-x {
+        display: flex;
+        justify-content: center;
+    }
+
+    .center-y {
+        display: flex;
+        align-items: center;
+    }
+
+    .center-xy {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* position */
+
+    /* size */
+    .icon-size-1 {
+        --size: 30px;
+        width: var(--size);
+        height: var(--size);
+        font-size: var(--size);
+    }
+
+    /* size */
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}

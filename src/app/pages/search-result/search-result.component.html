@@ -1,0 +1,153 @@
+<div class="py-[90px] bg-background-0">
+    <h1 class="text-[32px] font-medium text-center">Search Results</h1>
+    <div class="pt-[30px] center-x">
+        <div class="flex border border-gray-200 w-8/12 md:w-5/12">
+            <div class="w-[200px] flex items-center justify-between p-4 bg-white">
+                <p>All Tags</p>
+                <mat-icon>keyboard_arrow_down</mat-icon>
+            </div>
+            <div class="flex-1">
+                <input class="border-l p-4 w-full" type="text" placeholder="Search our store">
+            </div>
+            <div class="p-4 aspect-square text-white bg-primary-0 center-xy"><mat-icon>search</mat-icon></div>
+        </div>
+    </div>
+</div>
+
+<div class="bg-background-0 pt-[30px] pb-[60px]">
+    <div class="grid grid-cols-12 gap-5 app-container">
+
+        <!-- fillter -->
+        <section class="col-span-3 bg-white rounded-xl p-4">
+            <p class="font-medium">
+                Filter:
+            </p>
+
+
+            <hr class="mt-4 border-gray-300">
+            <div class="pt-4 flex justify-between">
+                Availability <mat-icon>keyboard_arrow_up</mat-icon>
+            </div>
+            <div class="pt-7 flex justify-between items-center">
+                <div class="center-y gap-2">
+                    <input type="checkbox" class="checkbox-1">
+                    <p class="text-gray-500 text-sm">In stock</p>
+                </div>
+                <p class="text-gray-500 text-sm">10</p>
+            </div>
+            <div class="pt-5 flex justify-between items-center">
+                <div class="center-y gap-2">
+                    <input type="checkbox" class="checkbox-1">
+                    <p class="text-gray-500 text-sm">Out of stock</p>
+                </div>
+                <p class="text-gray-500 text-sm">10</p>
+            </div>
+
+
+            <hr class="mt-7 border-gray-300">
+            <div class="pt-4 flex justify-between">
+                Price <mat-icon>keyboard_arrow_up</mat-icon>
+            </div>
+
+            <p class="pt-4">The highest price is $145.00</p>
+            <div class="mt-4">
+                <input type="range" class="w-full accent-gray-500">
+            </div>
+            <div class="pt-4 center-y">
+                <p class="font-medium">Price:</p>
+                <p class="font-thin">
+                    $0 - $145
+                </p>
+            </div>
+
+
+            <hr class="mt-4 border-gray-300">
+            <div class="pt-4 flex justify-between">
+                Color <mat-icon>keyboard_arrow_up</mat-icon>
+            </div>
+
+            <div class="pt-7 flex justify-between items-center">
+                <div class="center-y gap-2">
+                    <input type="checkbox" class="checkbox-1">
+                    <p class="text-gray-500 text-sm">Bkack</p>
+                </div>
+                <p class="text-gray-500 text-sm">10</p>
+            </div>
+            <div class="pt-5 flex justify-between items-center">
+                <div class="center-y gap-2">
+                    <input type="checkbox" class="checkbox-1">
+                    <p class="text-gray-500 text-sm">Brown</p>
+                </div>
+                <p class="text-gray-500 text-sm">10</p>
+            </div>
+            <div class="pt-5 flex justify-between items-center">
+                <div class="center-y gap-2">
+                    <input type="checkbox" class="checkbox-1">
+                    <p class="text-gray-500 text-sm">Gold</p>
+                </div>
+                <p class="text-gray-500 text-sm">10</p>
+            </div>
+            <div class="pt-5 flex justify-between items-center">
+                <div class="center-y gap-2">
+                    <input type="checkbox" class="checkbox-1">
+                    <p class="text-gray-500 text-sm">Green</p>
+                </div>
+                <p class="text-gray-500 text-sm">10</p>
+            </div>
+            <div class="pt-5 flex justify-between items-center">
+                <div class="center-y gap-2">
+                    <input type="checkbox" class="checkbox-1">
+                    <p class="text-gray-500 text-sm">Red</p>
+                </div>
+                <p class="text-gray-500 text-sm">10</p>
+            </div>
+
+        </section>
+        <!-- fillter -->
+
+        <!-- products -->
+        <section class="col-span-9 grid grid-cols-4 gap-5 ">
+            <div *ngFor="let item of [1,2,3,4,4]" class="bg-white rounded-lg overflow-hidden group">
+
+                <!-- image -->
+                <div class="p-3 relative overflow-hidden group/image">
+                    <img class="group-hover/image:scale-110 transition-all"
+                        src="https://isotech-demo.myshopify.com/cdn/shop/files/1200_1200-4_a69c5411-0b06-4e13-9be5-7c3af242ba1f_360x.png?v=1695528909"
+                        alt="">
+                    <div
+                        class="absolute left-0 bottom-0 flex items-center justify-center w-full py-2 bg-primary-0 text-white font-medium text-center text-lg opacity-0 group-hover:opacity-100 translate-y-[100%] group-hover:opacity-1 group-hover:translate-y-0 transition-all  duration-500">
+                        <p class="w-fit center-y gap-1">
+                            <mat-icon>shopping_cart</mat-icon> Quick shop
+                        </p>
+                    </div>
+                    <div class="absolute top-3 right-0 flex flex-col gap-4 pr-3">
+                        <div
+                            class="size-9 rounded bg-white text-gray-500 center-xy shadow-lg hover:bg-gray-100 translate-y-[100%] group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all  duration-500">
+                            <mat-icon>favorite</mat-icon>
+                        </div>
+
+                        <div
+                            class="size-9 rounded bg-white text-gray-500 center-xy shadow-lg hover:bg-gray-100 translate-y-[100%] group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all  duration-500">
+                            <mat-icon>compare_arrows</mat-icon>
+                        </div>
+
+                        <div
+                            class="size-9 rounded bg-white text-gray-500 center-xy shadow-lg hover:bg-gray-100 translate-y-[100%] group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all  duration-500">
+                            <mat-icon>visibility</mat-icon>
+                        </div>
+                    </div>
+                </div>
+                <!-- image -->
+
+                <div class="pt-4 px-3 pb-6">
+                    <h3 class="font-medium">iPad 10t Generation</h3>
+                    <p class="pt-2 font-medium">$230.00</p>
+                    <p class="text-green-600"> In stock 72 Items</p>
+
+                </div>
+            </div>
+        </section>
+        <!-- products -->
+
+    </div>
+</div>

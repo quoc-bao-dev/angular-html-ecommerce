@@ -1,0 +1,162 @@
+<div class="bg-background-0 pb-16">
+    <div class="pt-12 app-container">
+        <h1 class="heading-1">Your Shopping Cart</h1>
+
+        <!-- cart list item -->
+        <section>
+            <div class="mt-16">
+                <table class="w-full">
+                    <thead class="border-b border-gray-300">
+                        <tr class="">
+                            <th class="th-1 text-start">
+                                PRODUCT
+                            </th>
+                            <th class="th-1">
+                                QUANTITY
+                            </th>
+                            <th class="th-1 text-end">
+                                TOTAL
+                            </th>
+                        </tr>
+
+                    </thead>
+                    <tbody>
+                        <!-- item -->
+                        <tr class="border-b pb-4 border-gray-300">
+                            <td>
+                                <div class="flex gap-12 py-6 w-fit">
+                                    <img class="size-[80px] object-cover"
+                                        src="https://isotech-demo.myshopify.com/cdn/shop/files/7_10eb10c9-0ae2-465d-9929-cdae292eae6c_150x.png?v=1711982948"
+                                        alt="">
+                                    <div class="font-thin">
+                                        <h2 class="font-thin">Head Phone</h2>
+                                        <p class="pt-2 font-normal">Air Pro 3 Wireless</p>
+                                        <p class="text-sm mt-1">
+                                            Color: Black
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </td>
+                            <td>
+                                <div class="flex gap-5 py-6 items-center mx-auto w-fit text-gray-500">
+                                    <div class="grid grid-cols-3 w-[150px] rounded-full border-gray-300 border mt-2">
+                                        <div class="center-xy text-lg">
+                                            <mat-icon class="icon-size-1">remove</mat-icon>
+                                        </div>
+                                        <div class="col-span">
+                                            <input type="text" class="w-full h-full text-center bg-transparent py-3"
+                                                value="1" min="1">
+                                        </div>
+                                        <div class="center-xy text-lg ">
+                                            <mat-icon class="icon-size-1">add</mat-icon>
+                                        </div>
+                                    </div>
+                                    <mat-icon>
+                                        delete
+                                    </mat-icon>
+                                </div>
+                            </td>
+                            <td>
+                                <p class="text-end font-thin">
+                                    $180.00
+                                </p>
+                            </td>
+                        </tr>
+                        <!-- item -->
+
+                    </tbody>
+                </table>
+
+            </div>
+        </section>
+        <!-- cart list item -->
+
+        <!-- summary -->
+        <section>
+            <div class="pt-20 flex justify-between ">
+                <div class=" w-[350px]">
+                    <div class="font-thin">
+                        <h2>Apply a discount code</h2>
+                        <input type="text" class="mt-3 input-1" placeholder="Enter discount code here">
+                    </div>
+
+                    <div class="font-thin pt-5">
+                        <h2>Order specical instructions</h2>
+                        <textarea type="text" class="mt-3 border border-gray-300 rounded w-full p-3" rows="5"
+                            placeholder="Enter discount code here"></textarea>
+
+                    </div>
+                </div>
+                <div class="">
+                    <div class="flex justify-end gap-3 items-center">
+                        <p class="font-medium">
+                            Subtotal
+                        </p>
+                        <p class="font-thin">
+                            $280.00 USD
+                        </p>
+                    </div>
+                    <p class="text-end pt-4">
+                        Texas and shipping calculated at checkout
+                    </p>
+                    <div class="flex justify-items-end">
+                        <button class="btn bg-primary-0 text-white w-[350px] py-4 mt-6"> Check out</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- summary -->
+
+        <hr class="border-gray-300 mt-6">
+
+        <!-- relative product -->
+        <section>
+            <h2 class="heading-1 pt-16 text-center">
+                You may also like
+            </h2>
+            <div class="pt-8 grid grid-cols-4 gap-5">
+                <div *ngFor="let item of [1,2,3,4]" class="bg-white rounded-lg overflow-hidden group">
+
+                    <!-- image -->
+                    <div class="p-3 relative overflow-hidden group/image">
+                        <img class="group-hover/image:scale-110 transition-all"
+                            src="https://isotech-demo.myshopify.com/cdn/shop/files/1200_1200-4_a69c5411-0b06-4e13-9be5-7c3af242ba1f_360x.png?v=1695528909"
+                            alt="">
+                        <div
+                            class="absolute left-0 bottom-0 flex items-center justify-center w-full py-2 bg-primary-0 text-white font-medium text-center text-lg opacity-0 group-hover:opacity-100 translate-y-[100%] group-hover:opacity-1 group-hover:translate-y-0 transition-all  duration-500">
+                            <p class="w-fit center-y gap-1">
+                                <mat-icon>shopping_cart</mat-icon> Quick shop
+                            </p>
+                        </div>
+                        <div class="absolute top-3 right-0 flex flex-col gap-4 pr-3">
+                            <div
+                                class="size-9 rounded bg-white text-gray-500 center-xy shadow-lg hover:bg-gray-100 translate-y-[100%] group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all  duration-500">
+                                <mat-icon>favorite</mat-icon>
+                            </div>
+
+                            <div
+                                class="size-9 rounded bg-white text-gray-500 center-xy shadow-lg hover:bg-gray-100 translate-y-[100%] group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all  duration-500">
+                                <mat-icon>compare_arrows</mat-icon>
+                            </div>
+
+                            <div
+                                class="size-9 rounded bg-white text-gray-500 center-xy shadow-lg hover:bg-gray-100 translate-y-[100%] group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all  duration-500">
+                                <mat-icon>visibility</mat-icon>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- image -->
+
+                    <div class="pt-4 px-3 pb-6">
+                        <h3 class="font-medium">iPad 10t Generation</h3>
+                        <p class="pt-2 font-medium">$230.00</p>
+                        <p class="text-green-600"> In stock 72 Items</p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- relative product -->
+    </div>
+</div>
