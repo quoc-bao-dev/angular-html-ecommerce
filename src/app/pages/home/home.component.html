@@ -1,7 +1,7 @@
 <div class="bg-background-0 ">
     <!-- banner -->
     <section class="py-5 app-container">
-        <div class="grid grid-rows-2 grid-cols-5 gap-4">
+        <div class="grid grid-rows-2 grid-cols-5 gap-4" [routerLink]="['/shop']" routerLinkActive="router-link-active">
             <div class="col-span-4 row-span-2 rounded-xl overflow-hidden">
                 <img src="https://isotech-demo.myshopify.com/cdn/shop/files/2_f639d039-1b63-405c-ab7d-4561d7871d76.png?v=1696134235"
                     alt="">
@@ -73,7 +73,8 @@
         <div class="pt-6 grid grid-cols-5 gap-5">
 
             <!-- product card -->
-            <div *ngFor="let item of [1,2,3,4,4,4,4,4,4,4]" class="bg-white rounded-lg overflow-hidden group">
+            <div *ngFor="let item of [1,2,3,4,4,4,4,4,4,4]" class="bg-white rounded-lg overflow-hidden group"
+                [routerLink]="'/product-detail'" routerLinkActive="router-link-active">
 
                 <!-- image -->
                 <div class="p-3 relative overflow-hidden group/image">

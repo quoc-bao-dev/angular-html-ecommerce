@@ -14,12 +14,14 @@ import { SearchResultComponent } from './pages/search-result/search-result.compo
 import { LoginComponent } from './pages/login/login.component';
 import { SignupComponent } from './pages/signup/signup.component';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
+import { ShopComponent } from './pages/shop/shop.component';
 
 export const routes: Routes = [
     {path: '',component: DefaultLayoutComponent, children:[
         {path: '', component: HomeComponent},
         {path: 'home',component: HomeComponent},
         {path: 'product-detail', component: ProductDetailComponent},
+        {path: 'shop', component: ShopComponent},
         {path: 'cart', component: CartComponent}, 
         {path: 'about',component: AboutComponent},
         {path: 'contact',component: ContactComponent},    
